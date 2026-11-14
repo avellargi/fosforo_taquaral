@@ -1,44 +1,59 @@
-<img src= "images/imagem (1).png"/>
+<img src="images/imagem (1).png"/>
 
-<h1 align="center">Modelo para o controle da taxa de crescimento da concentração
-de fósforo na Lagoa do Taquaral</h1>
+<h1 align="center">Modelagem da dinâmica do fósforo total na Lagoa do Taquaral (Campinas, SP) por equações diferenciais</h1>
 
 <p align="center">
   <img src="images/header (3).png" />
 </p>
 
-Este repositório contém o código-fonte desenvolvido para a Entrega Final da disciplina "Equações Diferenciais" do segundo semestre do Bacharelado em Ciência e Tecnologia da Ilum. O objetivo do trabalho é investigar 
+Este repositório contém o código-fonte desenvolvido para a Entrega Final da disciplina "Equações Diferenciais" do segundo semestre do Bacharelado em Ciência e Tecnologia da Ilum. O objetivo do trabalho é modelar a concentração de fósforo total na Lagoa do Taquaral, em Campinas (SP), um corpo d'água urbano eutrofizado, e estimar o tempo necessário para que ela atinja o limite da Resolução CONAMA 357/2005 após a interrupção do lançamento de esgoto. Para isso, utiliza-se o modelo de balanço de massa de Vollenweider [1], na forma apresentada por Toné e Lima Neto [2], adaptado para incluir a liberação de fósforo pelo sedimento medida na lagoa [3]. A equação diferencial resultante é resolvida analiticamente, pela soma das soluções homogênea e particular, e numericamente, pelo método de Runge-Kutta de quarta ordem, e as duas soluções são comparadas. Por fim, simulam-se dois cenários de recuperação (interrupção do esgoto com e sem tratamento do sedimento).
 
-se é possível identificar o grupo taxonômico de um organismo a partir do seu viés de uso de códons, isto é, da frequência com que cada um dos 64 códons aparece em seu genoma [1]. Para isso, foram comparados cinco algoritmos de aprendizado de máquina (regressão logística, k-vizinhos mais próximos, árvore de decisão, floresta aleatória e gradient boosting) e um modelo baseline, utilizando o conjunto de dados "Codon Usage", disponível no UCI Machine Learning Repository [2]. Os hiperparâmetros de cada algoritmo foram otimizados com a biblioteca Optuna, e o desempenho dos modelos foi avaliado por validação cruzada e, ao final, em um conjunto de teste separado.
+## Modelo
+O modelo é a equação diferencial ordinária linear de primeira ordem
+
+## Modelo
+O modelo é uma equação diferencial ordinária linear de primeira ordem:
+
+```math
+\frac{dP}{dt} = \frac{W_{ext}}{V} + \frac{r}{\bar z} - \left(\frac{1}{\tau} + k\right)P,
+\qquad P(0)=P_0
+```
+
+em que \(P(t)\) é a concentração de fósforo total (µg/L), \(W_{ext}\) é a carga externa, \(V\) o volume do lago, \(r\) a taxa de liberação de fósforo pelo sedimento, \(\bar z\) a profundidade média, \(\tau = V/Q\) o tempo de residência da água e \(k\) o coeficiente de decaimento.
+
+## Dados
+- Morfometria, fósforo total, temperatura e liberação de fósforo pelo sedimento da Lagoa do Taquaral: tese de Hernández Piedrahíta (2002) [3].
+- Tempo de residência (usado para estimar a vazão): Lago das Garças, São Paulo, Henry et al. (2004) [4].
+- Coeficiente de decaimento: equação de Toné e Lima Neto (2020) [2].
 
 ## Tecnologias Utilizadas
 - Python (3.13.7): linguagem utilizada para o desenvolvimento do projeto;
+- NumPy (2.2.6): manipulação de arrays e operações matemáticas;
+- pandas (2.3.3): organização dos parâmetros e dos resultados em tabelas;
+- Matplotlib (3.10.6): construção dos gráficos.
 
-- pandas (2.3.3): utilizada para leitura, organização e manipulação de dados;
-
-- NumPy (2.2.6): foi empregada para manipulação de arrays e operações matemáticas;
-
-- Matplotlib (3.10.6): utilizada para a construção de gráficos e visualização dos resultados;
-
+## Acesso ao trabalho
+O relatório completo do projeto, contendo a modelagem matemática, a dedução analítica da solução da equação diferencial e a análise dos resultados obtidos pelo método numérico, bem como todos os arquivos referentes ao Overleaf estão disponíveis em formato PDF em [trabalho]()
 
 ## Acesso ao código
-As informações detalhadas do projeto, incluindo a fundamentação teórica, a formulação matemática e a resolução tanto analítica quanto numérica estão disponíveis no repositório em: [código](https://github.com/avellargi/ml_codon_usage/tree/main/code)
+O notebook com a implementação do método de Runge-Kutta, a comparação com a solução analítica e os cenários de recuperação está disponível em: [code]()
 
 ## Autoria
-| <img src="https://github.com/avellargi.png" width=115><br><sub>[Giovanna Avellar Machado](https://github.com/avellargi)</sub> |
-| :--: |
-Giovanna Avellar Machado - Aluna do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum - Escola de Ciência 
+| <img src="https://github.com/avellargi.png" width=115><br><sub>[Giovanna Avellar Machado](https://github.com/avellargi)</sub> | <img src="https://github.com/buruna087.png" width=115><br><sub>[Bruna Henrique Fujihashi](https://github.com/buruna087)</sub> | <img src="https://github.com/constantinovmurillo-boop.png" width=115><br><sub>[Murillo Constantinov](https://github.com/constantinovmurillo-boop)</sub> |
+| :--: | :--: | :--: |
 
-Bruna Henrique Fujihashi - Aluna do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum - Escola de Ciência 
-
-Murillo Constantinov - Aluno do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum - Escola de Ciência 
+Alunos do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum – Escola de Ciência.
 
 ## Professor Orientador
-| <img src="https://github.com/viniciuswasques" width=115><br><sub>[Prof. Dr. Daniel Roberto Cassar](http://lattes.cnpq.br/1717397276752482)</sub> |
+| <img src="https://github.com/viniciuswasques.png" width=115><br><sub>[Prof. Dr. Vinícius Francisco Wasques](http://lattes.cnpq.br/1558070758473264)</sub> |
 | :--: |
-Daniel Roberto Cassar - Docente Pesquisador da Ilum – Escola de Ciência. Doutorado em Ciência e Engenharia de Materiais (UFSCar) e Pós-Doutorado pela UFSCar. Atua na área de Informática de Materiais.
+Vinícius Francisco Wasques - Docente Pesquisador da Ilum – Escola de Ciência. 
 
 ## Referências Bibliográficas
+[1] VOLLENWEIDER, R. A. Scientific fundamentals of the eutrophication of lakes and flowing waters, with particular reference to nitrogen and phosphorus as factors in eutrophication. Paris: OECD, 1968. (Relatório DAS/CSI/68.27). <br>
+[2] TONÉ, A. J. A.; LIMA NETO, I. E. Modelagem simplificada do fósforo total em lagos e reservatórios brasileiros. Revista DAE, v. 68, n. 221, p. 142-156, 2020. DOI: 10.36659/dae.2020.012. <br>
+[3] HERNÁNDEZ PIEDRAHÍTA, E. Caracterização limnológica e estudo do processo de sedimentação e liberação de fósforo da Lagoa do Taquaral – Campinas (SP). 2002. Tese (Doutorado) – Escola de Engenharia de São Carlos, Universidade de São Paulo, São Carlos, 2002. <br>
+[4] HENRY, R.; CARMO, C. F.; BICUDO, D. C. Trophic status of a Brazilian urban reservoir and prognosis about the recovery of water quality. Acta Limnologica Brasiliensia, v. 16, n. 3, p. 251-262, 2004. <br>
+[5] BRASIL. Conselho Nacional do Meio Ambiente. Resolução CONAMA nº 357, de 17 de março de 2005. Diário Oficial da União, Brasília, 18 mar. 2005. <br>
 
-
-<img src= "images/imagem (2).png"/>
+<img src="images/imagem (2).png"/>

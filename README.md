@@ -30,7 +30,7 @@ em que $P(t)$ é a concentração de fósforo total (µg/L), $W_{ext}$ é a carg
 - Matplotlib (3.10.6): construção dos gráficos.
 
 ## Acesso ao trabalho
-O relatório completo do projeto, contendo a modelagem matemática, a dedução analítica da solução da equação diferencial e a análise dos resultados obtidos pelo método numérico, bem como todos os arquivos referentes ao Overleaf estão disponíveis em formato PDF em [paper](https://github.com/avellargi/fosforo_taquaral/tree/main/paper)
+O relatório completo do projeto, contendo a modelagem matemática, a dedução analítica da solução da equação diferencial e a análise dos resultados obtidos pelo método numérico, bem como todos os arquivos referentes ao Overleaf estão disponíveis em formato PDF em: [paper](https://github.com/avellargi/fosforo_taquaral/tree/main/paper)
 
 ## Acesso ao código
 O notebook com a implementação do método de Runge-Kutta, a comparação com a solução analítica e os cenários de recuperação está disponível em: [code](https://github.com/avellargi/fosforo_taquaral/tree/main/code)
@@ -56,7 +56,7 @@ Alunos do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação d
   </tr>
 </table>
 
-Vinícius Francisco Wasques - Docente Pesquisador da Ilum – Escola de Ciência (CNPEM). Doutorado em Matemática Aplicada.
+Prof. Dr. Vinícius Francisco Wasques - Docente Pesquisador da Ilum – Escola de Ciência (CNPEM). Doutorado em Matemática Aplicada.
 </div>
 
 ## Referências Bibliográficas

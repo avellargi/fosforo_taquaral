@@ -29,15 +29,16 @@ As informações detalhadas do projeto, incluindo a fundamentação teórica, a 
 | :--: |
 Giovanna Avellar Machado - Aluna do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum - Escola de Ciência 
 
+Bruna Henrique Fujihashi - Aluna do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum - Escola de Ciência 
+
+Murillo Constantinov - Aluno do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum - Escola de Ciência 
+
 ## Professor Orientador
-| <img src="https://github.com/user-attachments/assets/17dfa7bf-5ca9-42df-b63e-917827fc6308" width=115><br><sub>[Prof. Dr. Daniel Roberto Cassar](http://lattes.cnpq.br/1717397276752482)</sub> |
+| <img src="https://github.com/viniciuswasques" width=115><br><sub>[Prof. Dr. Daniel Roberto Cassar](http://lattes.cnpq.br/1717397276752482)</sub> |
 | :--: |
 Daniel Roberto Cassar - Docente Pesquisador da Ilum – Escola de Ciência. Doutorado em Ciência e Engenharia de Materiais (UFSCar) e Pós-Doutorado pela UFSCar. Atua na área de Informática de Materiais.
 
 ## Referências Bibliográficas
-[1] PARVATHY, Sujatha Thankeswaran; UDAYASURIYAN, Varatharajalu; BHADANA, Vijaipal. Codon usage bias. Molecular Biology Reports, v. 49, n. 1, p. 539-565, 2022. DOI: 10.1007/s11033-021-06749-4. Disponível em: https://pmc.ncbi.nlm.nih.gov/articles/PMC8613526/. Acesso em: 21 set. 2026. <br>
-[2] HALLEE, L.; KHOMTCHOUK, B. B. Codon usage [Dataset]. UCI Machine Learning Repository, 2020. Disponível em: https://doi.org/10.24432/C5KP6B. Acesso em: 21 set. 2026. <br>
 
-P.S. As referências estão ordenadas em ordem de aparição no documento.
 
 <img src= "images/imagem (2).png"/>

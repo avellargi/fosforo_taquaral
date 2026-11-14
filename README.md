@@ -1,6 +1,6 @@
 <img src="images/imagem (1).png"/>
 
-<h1 align="center">Modelagem da dinâmica do fósforo total na Lagoa do Taquaral (Campinas, SP) por equações diferenciais</h1>
+<h1 align="center">Modelagem da dinâmica do fósforo total na Lagoa do Taquaral por equações diferenciais</h1>
 
 <p align="center">
   <img src="images/header (3).png" />

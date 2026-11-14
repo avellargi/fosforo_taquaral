@@ -19,7 +19,7 @@ O modelo é uma equação diferencial ordinária linear de primeira ordem:
 \qquad P(0)=P_0
 ```
 
-em que \(P(t)\) é a concentração de fósforo total (µg/L), \(W_{ext}\) é a carga externa, \(V\) o volume do lago, \(r\) a taxa de liberação de fósforo pelo sedimento, \(\bar z\) a profundidade média, \(\tau = V/Q\) o tempo de residência da água e \(k\) o coeficiente de decaimento.
+em que $P(t)$ é a concentração de fósforo total (µg/L), $W_{ext}$ é a carga externa, $V$ o volume, $r$ a taxa de liberação de fósforo pelo sedimento, $\bar z$ a profundidade média, $\tau = V/Q$ o tempo de residência e $k$ o coeficiente de decaimento.
 
 ## Dados
 - Morfometria, fósforo total, temperatura e liberação de fósforo pelo sedimento da Lagoa do Taquaral: tese de Hernández Piedrahíta (2002) [3].
@@ -39,15 +39,28 @@ O relatório completo do projeto, contendo a modelagem matemática, a dedução 
 O notebook com a implementação do método de Runge-Kutta, a comparação com a solução analítica e os cenários de recuperação está disponível em: [code]()
 
 ## Autoria
-| <img src="https://github.com/avellargi.png" width=115><br><sub>[Giovanna Avellar Machado](https://github.com/avellargi)</sub> | <img src="https://github.com/buruna087.png" width=115><br><sub>[Bruna Henrique Fujihashi](https://github.com/buruna087)</sub> | <img src="https://github.com/constantinovmurillo-boop.png" width=115><br><sub>[Murillo Constantinov](https://github.com/constantinovmurillo-boop)</sub> |
-| :--: | :--: | :--: |
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/avellargi.png" width="115"><br><sub><a href="https://github.com/avellargi">Giovanna Avellar Machado</a></sub></td>
+    <td align="center"><img src="https://github.com/buruna087.png" width="115"><br><sub><a href="https://github.com/buruna087">Bruna Henrique Fujihashi</a></sub></td>
+    <td align="center"><img src="https://github.com/constantinovmurillo-boop.png" width="115"><br><sub><a href="https://github.com/constantinovmurillo-boop">Murillo Constantinov</a></sub></td>
+  </tr>
+</table>
 
 Alunos do Segundo Semestre do Bacharelado em Ciência, Tecnologia e Inovação da Ilum – Escola de Ciência.
+</div>
 
 ## Professor Orientador
-| <img src="https://github.com/viniciuswasques.png" width=115><br><sub>[Prof. Dr. Vinícius Francisco Wasques](http://lattes.cnpq.br/1558070758473264)</sub> |
-| :--: |
-Vinícius Francisco Wasques - Docente Pesquisador da Ilum – Escola de Ciência. 
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/viniciuswasques.png" width="115"><br><sub><a href="http://lattes.cnpq.br/1558070758473264">Prof. Dr. Vinícius Francisco Wasques</a></sub></td>
+  </tr>
+</table>
+
+Vinícius Francisco Wasques - Docente Pesquisador da Ilum – Escola de Ciência (CNPEM). Doutorado em Matemática Aplicada.
+</div>
 
 ## Referências Bibliográficas
 [1] VOLLENWEIDER, R. A. Scientific fundamentals of the eutrophication of lakes and flowing waters, with particular reference to nitrogen and phosphorus as factors in eutrophication. Paris: OECD, 1968. (Relatório DAS/CSI/68.27). <br>

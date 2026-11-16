@@ -3,7 +3,7 @@
 <h1 align="center">Modelagem da dinâmica do fósforo total na Lagoa do Taquaral por equações diferenciais</h1>
 
 <p align="center">
-  <img src="images/header (3).png" />
+  <img src="images/header_taquaral.png" />
 </p>
 
 Este repositório contém o código-fonte desenvolvido para a Entrega Final da disciplina "Equações Diferenciais" do segundo semestre do Bacharelado em Ciência e Tecnologia da Ilum. O objetivo do trabalho é modelar a concentração de fósforo total na Lagoa do Taquaral, em Campinas (SP), um corpo d'água urbano eutrofizado, e estimar o tempo necessário para que ela atinja o limite da Resolução CONAMA 357/2005 após a interrupção do lançamento de esgoto. Para isso, utiliza-se o modelo de balanço de massa de Vollenweider [1], na forma apresentada por Toné e Lima Neto [2], adaptado para incluir a liberação de fósforo pelo sedimento medida na lagoa [3]. A equação diferencial resultante é resolvida analiticamente, pela soma das soluções homogênea e particular, e numericamente, pelo método de Runge-Kutta de quarta ordem, e as duas soluções são comparadas. Por fim, simulam-se dois cenários de recuperação (interrupção do esgoto com e sem tratamento do sedimento).
